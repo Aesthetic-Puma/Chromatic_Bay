@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Chromatic Bay</title>
+<meta name="description" content="Écrire à Chromatic Bay — Lyon, France.">
+<link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">Chromatic Bay</a>
+  <nav class="nav">
+    <a class="nav-page" href="index.html#portraits">Portraits</a>
+    <a class="nav-page" href="index.html#street">Street</a>
+    <a class="nav-page" href="index.html#voyage">Voyage</a>
+    <a class="nav-page" href="index.html#sport">Sport</a>
+    <span class="nav-divider"></span>
+    <a class="nav-page" href="about.html">À propos</a>
+    <a class="nav-page current" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="contact-section">
+    <h1 class="about-heading">Contact</h1>
+    <p class="contact-intro">Pour une séance ou simplement pour écrire : <a href="mailto:[ton@email.fr]">mail</a>, ou le formulaire ci-dessous.</p>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="field-group">
+        <h2 class="field-title">Nom</h2>
+        <div class="field-row">
+          <div class="field">
+            <label for="cf-first-name">Prénom <span class="field-req">(obligatoire)</span></label>
+            <input type="text" id="cf-first-name" name="first-name" required>
+          </div>
+          <div class="field">
+            <label for="cf-last-name">Nom <span class="field-req">(obligatoire)</span></label>
+            <input type="text" id="cf-last-name" name="last-name" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="field field-single">
+        <label class="field-title" for="cf-subject">Objet <span class="field-req">(obligatoire)</span></label>
+        <input type="text" id="cf-subject" name="subject" required>
+      </div>
+
+      <div class="field field-single">
+        <label class="field-title" for="cf-email">Email <span class="field-req">(obligatoire)</span></label>
+        <input type="email" id="cf-email" name="email" placeholder="prenom.nom@exemple.fr" required>
+      </div>
+
+      <div class="field field-single">
+        <label class="field-title" for="cf-message">Message <span class="field-req">(obligatoire)</span></label>
+        <textarea id="cf-message" name="message" rows="6" required></textarea>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="btn-submit" disabled>Envoyer</button>
+        <span class="form-note">Ouvre ton client mail avec le message pré-rempli.</span>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">Chromatic Bay — Lyon, France</footer>
+
+<script src="js/main.js?v=6"></script>
+</body>
+</html>
