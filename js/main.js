@@ -167,7 +167,7 @@
       const email = data.get("email").trim();
       const message = data.get("message").trim();
 
-      const to = "[ton@email.fr]";
+      const to = "jviratel@gmail.com";
       const body = `Nom : ${firstName} ${lastName}\nEmail : ${email}\n\n${message}`;
       const mailto =
         `mailto:${to}?subject=${encodeURIComponent(subject)}` +
