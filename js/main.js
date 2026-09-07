@@ -98,7 +98,7 @@
     const show = (index) => {
       currentIndex = (index + currentList.length) % currentList.length;
       const img = currentList[currentIndex];
-      imgEl.src = img.currentSrc || img.src;
+      imgEl.src = img.dataset.full || img.currentSrc || img.src;
       imgEl.alt = img.alt || "";
       countEl.textContent = `${currentIndex + 1} / ${currentList.length}`;
       const multi = currentList.length > 1;
