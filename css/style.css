@@ -108,6 +108,8 @@ p{margin:0}
 .cta-label{font:300 10px/1 Jost,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-50)}
 .cta-email{font:300 clamp(28px,6vw,44px)/1.15 'Cormorant Garamond',serif;color:var(--ink);border-bottom:1px solid rgba(20,18,16,.3);padding-bottom:8px}
 .cta-meta{font:300 13px/1.6 Jost,sans-serif;color:var(--ink-50)}
+.cta-meta a{border-bottom:1px solid rgba(20,18,16,.25);transition:color .25s ease,border-color .25s ease}
+.cta-meta a:hover{color:var(--ink);border-color:var(--ink)}
 @media (max-width:900px){.cta{margin:0 28px;padding:80px 0 60px}}
 
 /* ---------- footer ---------- */
