@@ -49,7 +49,13 @@ p{margin:0}
 
 @media (max-width:760px){
   .site-header{padding:16px 20px 0}
-  .nav{width:100%;order:3;padding:14px 0 12px;margin-top:12px;border-top:1px solid var(--rule-soft);gap:22px}
+  .nav{
+    width:100%;order:3;flex-wrap:wrap;overflow-x:visible;
+    padding:14px 0 12px;margin-top:12px;border-top:1px solid var(--rule-soft);
+    column-gap:24px;row-gap:12px;
+  }
+  .nav-divider{flex-basis:100%;width:auto;height:1px;background:var(--rule-soft);margin:2px 0 0}
+  .nav-page{font-size:10px;letter-spacing:.18em;color:var(--ink-45)}
 }
 
 /* ---------- series sections ---------- */
